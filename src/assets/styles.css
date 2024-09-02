@@ -1,0 +1,56 @@
+/* src/assets/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f2f1; /* Light green background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-page, .login-page, .summary-page {
+    text-align: center;
+    background: #ffffff; /* White background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004d40; /* Darker green color */
+}
+
+input[type="text"], input[type="password"], input[type="url"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b; /* Medium green */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker green */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}

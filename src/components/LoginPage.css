@@ -1,0 +1,86 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #e0f2f1; /* Light green background similar to previous pages */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    position: relative; /* For positioning the sparkles */
+    overflow: hidden; /* Hide overflow to keep sparkles within bounds */
+  }
+  
+  .login-container {
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    text-align: center;
+    position: relative; /* To ensure sparkles do not overlap the container */
+    z-index: 1; /* Ensure content is on top of sparkles */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white for readability */
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    font-weight: bolder; /* Bolder title */
+    margin-bottom: 1.5rem;
+    color: #004d40; /* Dark green color for the title */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-field {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid #004d40; /* Dark green border for inputs */
+    border-radius: 10px;
+    outline: none;
+    background-color: #ffffff; /* White background for inputs */
+    color: #004d40; /* Dark green text color */
+    transition: all 0.3s ease;
+  }
+  
+  .input-field::placeholder {
+    color: #004d40; /* Dark green placeholder text */
+  }
+  
+  .next-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #004d40; /* Dark green button color */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #00796b; /* Lighter green on hover */
+  }
+  
+  .sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure it does not interfere with interactions */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 40%);
+    background-size: 50px 50px;
+    z-index: 0; /* Ensure it is below other content */
+    animation: sparkle 3s infinite ease-in-out;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
